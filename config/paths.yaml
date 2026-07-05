@@ -65,7 +65,7 @@ hyperparameter_search:
         params:
           clf__n_estimators: [25, 50, 100]
           clf__max_samples: [0.5, 0.7, 1.0]
-          clf__estimator__max_depth: [2, 5, null]
+          clf__estimator__max_depth: [2, 5]
 
       adaboost:
         enabled: true
@@ -103,7 +103,7 @@ hyperparameter_search:
             low: 0.5
             high: 1.0
           clf__estimator__max_depth:
-            values: [2, 3, 4, null]
+            values: [2, 3, 4]
 
       adaboost:
         enabled: true
@@ -127,7 +127,7 @@ hyperparameter_search:
             low: 0.01
             high: 10.0
           clf__tree_max_depth:
-            values: [2, 3, 4, null]
+            values: [2, 3, 4]
           clf__n_neighbors:
             dist: "randint"
             low: 3
@@ -147,7 +147,7 @@ hyperparameter_search:
           clf__max_depth:
             dist: "randint"
             low: 2
-            high: 5
+            high: 4
           clf__subsample:
             dist: "uniform"
             low: 0.5
